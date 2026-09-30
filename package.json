@@ -1,0 +1,8 @@
+{
+  "name": "harsh-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of Harsh Kumar - real estate sales & business development",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "dependencies": { "express": "^4.19.2" }
+}

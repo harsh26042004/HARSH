@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harsh Kumar | Real Estate Sales & Business Development, Mathura–Vrindavan</title>
+  <meta name="description" content="Harsh Kumar helps buyers find plots, flats and villas in Mathura–Vrindavan. Founder of Media On Stake.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav">
+    <a href="#top" class="logo">Harsh Kumar</a>
+    <nav>
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a>
+      <a href="#contact" class="btn btn-sm">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="hello">Mathura–Vrindavan real estate</p>
+        <h1>I help families find the right plot, flat or villa.</h1>
+        <p class="lead" id="typed-line"></p>
+        <div class="cta">
+          <a href="#contact" class="btn magnetic">Book a site visit</a>
+          <a href="#experience" class="btn btn-ghost magnetic">See my work</a>
+        </div>
+      </div>
+      <div class="hero-photo tilt"><img src="assets/profile.png" alt="Harsh Kumar" width="420" height="420"></div>
+    </section>
+
+    <section class="stats" id="stats"></section>
+
+    <section id="about" class="section"><h2>About</h2><p class="about" id="about-text"></p></section>
+
+    <section id="skills" class="section">
+      <h2>What I do well</h2>
+      <div class="tabs" id="skill-tabs" role="tablist"></div>
+      <div class="chips" id="skill-chips"></div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <p class="hint">Select a role to see what I did there.</p>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education & leadership</h2>
+      <div class="cards" id="edu-cards"></div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Let's talk</h2>
+      <div class="contact-grid">
+        <div class="contact-info" id="contact-info"></div>
+        <form id="contact-form" novalidate>
+          <label>Name<input name="name" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <label>I'm interested in
+            <select name="interest"><option>Buying property</option><option>Selling property</option><option>Digital marketing</option><option>Something else</option></select>
+          </label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn" type="submit">Send message</button>
+          <p id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Harsh Kumar · Built with HTML, CSS, JS, Three.js and Node</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
